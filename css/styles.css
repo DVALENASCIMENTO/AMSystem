@@ -1,0 +1,137 @@
+/* Reset de estilos */
+body, h1, h2, h3, p, ul, ol, li, form, fieldset, legend, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h2{
+  color: #f10000;
+}
+
+/* Estilo para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #041344; /* Cor de fundo */
+  color: #000000; /* Cor do texto */
+  line-height: 1.6;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilo para o título */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilo para a tabela */
+#disciplinas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #b9b9b9; /* Cor de fundo da tabela */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#disciplinas th,
+#disciplinas td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #a7a7a7; /* Cor da linha de separação */
+}
+
+#disciplinas th {
+  background-color: #232425; /* Cor de fundo do cabeçalho da tabela */
+  color: #ffffff; /* Cor do texto no cabeçalho da tabela */
+  border: 1px solid #525252; /* Cor da borda */
+
+}
+
+/* Estilo para os inputs */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #86888a; /* Cor da borda */
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Estilo para os botões */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto no botão */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #04448a; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilo para o botão de ação na tabela */
+.actions button {
+  width: auto;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  #disciplinas th,
+  #disciplinas td {
+    padding: 8px;
+  }
+
+  /* Estilo para os inputs em dispositivos móveis */
+  input[type="text"],
+  input[type="number"] {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* Estilo para os botões em dispositivos móveis */
+  button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* Estilo para o botão "Criar Nova Disciplina" em dispositivos móveis */
+  #criarDisciplinaBtn {
+    margin-top: 10px;
+  }
+}
+
+.aprovado {
+  color: blue; /* azul */
+}
+
+.reprovado {
+  color: red; /* vermelho */
+}
+
+.exame-final {
+  color: rgb(187, 157, 25); /* amarelo */
+}

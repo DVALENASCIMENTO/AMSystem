@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMSystem</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>AMSystem</h2>
+
+  <table id="disciplinas">
+    <thead>
+      <tr>
+        <th>Período</th>
+        <th>Disciplina</th>
+        <th>AV1</th>
+        <th>AV2</th>
+        <th>Média N1</th>
+        <th>AV3</th>
+        <th>Média N2</th>
+        <th>Média Parcial</th>
+        <th>Situação</th>
+        <th>Nota Exame Final</th>
+        <th>Média Final</th>
+        <th>Situação Final</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" id="periodo"></td>
+        <td><input type="text" id="disciplina"></td>
+        <td><input type="number" id="av1" onchange="atualizarResultados()"></td>
+        <td><input type="number" id="av2" onchange="atualizarResultados()"></td>
+        <td><input type="text" id="mediaN1" disabled></td>
+        <td><input type="number" id="av3" onchange="atualizarResultados()"></td>
+        <td><input type="text" id="mediaN2" disabled></td>
+        <td><input type="text" id="mediaParcial" disabled></td>
+        <td><input type="text" id="situacao" disabled></td>
+        <td><input type="number" id="notaExameFinal" onchange="atualizarResultados()"></td>
+        <td><input type="text" id="mediaFinal" disabled></td>
+        <td><input type="text" id="situacaoFinal" disabled></td>
+        <td><button class="editar-btn" onclick="editarDisciplina(this)">Editar</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button id="criarDisciplinaBtn">Criar Nova Disciplina</button>
+  <button id="exportarPDFBtn">Exportar em PDF</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
